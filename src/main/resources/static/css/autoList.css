@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Cormorant_Unicase; /* Гарнитура шрифта */
+    src: url("fonts/CormorantUnicase-Medium.ttf"); /* Путь к файлу со шрифтом */
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cormorant_Unicase;
+}
+body {
+    background: linear-gradient(180deg, #43535E 0%, #61615F 100%) fixed;
+}
+.carCarda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    border:1px solid white;
+    background: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.card{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+
+}
+.nameAuto{
+    color: white;
+    z-index: -50;
+    text-align: center;
+    font-size: 5vw;
+    text-decoration:none;
+}
+.characteristics{
+
+    display: flex;
+    float: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+.characteristics > div{
+    margin: 5px 10px;
+    color: white;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    text-align: center;
+    width: 6em;
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    margin-left: -40px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 10px 20px;
+    background: #35424A;
+    font-size: 0.7em;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #35424A transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sectionAuto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+.customers {
+    text-align: center;
+    color: white;
+    font-family: Cormorant_Unicase;
+    border-collapse: collapse;
+    width: 70%;
+    border: 1px solid white;
+}
+.section2{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    z-index: 3;
+    margin-bottom: 30px;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+.inputNumber{
+    font-size: 2vw;
+    padding: 10px;
+}
+.section3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+    margin-bottom: 2%;
+}
+.buttonSearch{
+    padding: 10px 30px;
+    background: #FFD600;
+    color: black;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-size: 2.1vw;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+}
+header > a > img{
+    margin: 10px 60px;
+}
+header > a {
+
+    color: white;
+    font-size: 2.1em;
+    text-decoration:none;
+}
+header >img{
+    margin: 10px 60px;
+}
+.menu{
+    margin-bottom: 30px;
+    margin: auto;
+    padding: 10px;
+    width: 85%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+}
+.menu > a{
+    color: white;
+    font-size: 2.1em;
+    text-decoration:none;
+}
+.menu > .active{
+    margin: 10px 0px;
+    color: #353C41;
+    text-decoration:none;
+}
+/* forms */
+.formIndex{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+.listDateInp{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items:center;
+}
+.listDateInp >div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+table, td, th {
+    border: none;
+}
+table {
+    border-spacing: 5px;
+    text-align:center;
+    border-collapse: separate;
+}
+.tab1{
+    background: rgba(0,0,0,0.36);
+    width:130px;
+    height:50px;
+    color:white;
+    font-size:20px;
+}
+.tab2{
+    background: rgba(255,255,255,0.36);
+    color:black;
+    height:50px;
+    width:100px;
+    font-size:20px;
+}
+.customers {
+    text-align: center;
+    color: white;
+    font-family: Cormorant_Unicase;
+    border-collapse: collapse;
+    width: 75%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+.inputNumber{
+    font-size: 1.5vw;
+    padding: 10px;
+}
