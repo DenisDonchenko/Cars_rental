@@ -18,35 +18,37 @@ public class AppealDao {
 
 
     public List<Appeal> index(){
-       /* return  jdbcTemplate.query(
-                "SELECT appeal.`id`, concat (auto.marka,' ',auto.model) AS name_car,\n" +
-                        "                        concat(klient.first_name,' ',klient.last_name) as klient_name,\n" +
-                        "                        klient.phone_number, DATE_FORMAT(appeal.date_return, '%d.%m.%Y') as date_return,\n" +
-                        "                        DATE_FORMAT(appeal.date_issue, '%d.%m.%Y') as date_issue, `place_return`, `place_issue`,\n" +
-                        "                        appeal.count_day,appeal.price_day,appeal.all_price \n" +
-                        "                        FROM `appeal`\n" +
-                        "                        INNER JOIN  auto on appeal.id_auto = auto.id\n" +
-                        "                        INNER JOIN klient on appeal.id_klient = klient.id\n" +
-                        "                        WHERE appeal.availability = 1 ORDER BY appeal.id  DESC",
-                new BeanPropertyRowMapper<>(Appeal.class));*/
         return  jdbcTemplate.query(
                 "SELECT appeal.`id`, concat (auto.marka,' ',auto.model) AS name_car,\n" +
-                        "                        concat(klient.first_name,' ',klient.last_name) as klient_name,\n" +
-                        "                        klient.phone_number, appeal.date_return,\n" +
-                        "                       DATE_FORMAT(appeal.date_issue, '%d.%m.%Y') as date_issue, `place_return`, `place_issue`,\n" +
-                        "                        appeal.count_day,appeal.price_day,appeal.all_price," +
+                        "concat(klient.first_name,' ',klient.last_name) as klient_name,\n" +
+                        "klient.phone_number, appeal.date_return,\n" +
+                        "DATE_FORMAT(appeal.date_issue, '%d.%m.%Y') as date_issue, `place_return`, `place_issue`, appeal.count_day,appeal.price_day,appeal.all_price,\n" +
                         "DATE_FORMAT(appeal.date_return, '%d.%m.%Y') as date_return \n" +
-                        "                        FROM `appeal`\n" +
-                        "                        INNER JOIN  auto on appeal.id_auto = auto.id\n" +
-                        "                        INNER JOIN klient on appeal.id_klient = klient.id\n" +
-                        "                        WHERE appeal.availability = 1 ORDER BY appeal.id  DESC",
+                        "FROM `appeal`\n" +
+                        "INNER JOIN  auto on appeal.id_auto = auto.id\n" +
+                        "INNER JOIN klient on appeal.id_klient = klient.id\n" +
+                            "WHERE appeal.availability = 1 ORDER BY appeal.id  DESC",
                 new BeanPropertyRowMapper<>(Appeal.class));
     }
-    public void deleteAuto(int id){
+    public void deleteAppeal(int id){
         LocalDate localDate = LocalDate.now();
-        System.out.println(localDate.toString());
-        jdbcTemplate.update("UPDATE `appeal` SET `availability`=0 WHERE appeal.id = ?",id);
+        jdbcTemplate.update("UPDATE `appeal` SET `availability`=0,`coment`='Бронь скасована' WHERE id = ?",id);
     }
-
+    public void closeAppeal(int id){
+        jdbcTemplate.update("UPDATE `appeal` SET `availability`=0, appeal.coment = concat('Бронь закрита ', DATE_FORMAT(now(), '%d.%m.%Y'))  WHERE id = ?",id);
+    }
+    public List<Appeal> indexArhiw(){
+        return  jdbcTemplate.query(
+                "SELECT appeal.`id`, concat (auto.marka,' ',auto.model) AS name_car,\n" +
+                        "concat(klient.first_name,' ',klient.last_name) as klient_name,\n" +
+                        "klient.phone_number,appeal.coment, appeal.date_return,\n" +
+                        "DATE_FORMAT(appeal.date_issue, '%d.%m.%Y') as date_issue, `place_return`, `place_issue`, appeal.count_day,appeal.price_day,appeal.all_price,\n" +
+                        "DATE_FORMAT(appeal.date_return, '%d.%m.%Y') as date_return \n" +
+                        "FROM `appeal`\n" +
+                        "INNER JOIN  auto on appeal.id_auto = auto.id\n" +
+                        "INNER JOIN klient on appeal.id_klient = klient.id\n" +
+                        "WHERE appeal.availability = 0 ORDER BY appeal.id  DESC",
+                new BeanPropertyRowMapper<>(Appeal.class));
+    }
 
 }

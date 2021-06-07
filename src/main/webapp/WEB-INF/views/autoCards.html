@@ -2,12 +2,9 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Автомобілі</title>
   <link href="/resources/css/dataPicker.css" rel="stylesheet" type="text/css"/>
-<!--
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
--->
 
   <link rel="stylesheet" type="text/css" href="/resources/css/autoList.css">
 
@@ -107,13 +104,13 @@
     <div>
       <div>
         <div style="margin-bottom: 20px;">Подача авто</div>
-        <input name="date_return" type="text" class="inputDate" th:value="${dateOne}" id="datepicker" placeholder="подача авто">
+        <input name="date_issue" type="text" class="inputDate" th:value="${dateOne}" id="datepicker" placeholder="подача авто">
       </div>
     </div>
     <div>
       <div>
         <div style="margin-bottom: 20px;">Повернення авто</div>
-        <input name="date_issue" type="text" class="inputDate" th:value="${dateTwo}" id="datepicker2" placeholder="повернення авто">
+        <input name="date_return" type="text" class="inputDate" th:value="${dateTwo}" id="datepicker2" placeholder="повернення авто">
       </div>
     </div>
     <input type="submit" class="buttonSearch" value="Пошук">
@@ -185,20 +182,7 @@
       <input type="hidden" th:name="dateTwos" th:value="${dateTwo}">
       <input type="submit" class="buttonSearch" value="Забронювати">
     </form>
-   <!-- <label class="openokno" style="cursor: pointer">Открыть окно (с затемнением)</label>
--->
-    <!--<div class="blockcentr" style="display: none">
-      <div style="margin: auto; width: 50%; text-align: center;font-size: 1.9vw; margin-bottom: 10px; color: white;">Введіть номер телефону</div>
-      <form class="formsTel" th:method="POST" th:action="@{/klient/new}" >
-        <div>
-          <input name="phone_number" th:id="phone1" class="inputTel"   tipe="text">
-        </div>
 
-        <input class="inputButton" type="submit" value="Далі">
-      </form>
-
-    </div>
--->
   </div>
 </div>
 

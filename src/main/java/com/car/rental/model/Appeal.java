@@ -16,10 +16,11 @@ public class Appeal {
     private int count_day;
     private int price_day;
     private int all_price;
+    private String coment;
     public Appeal(){}
     public Appeal(int id, int id_auto,String name_car, int id_klient,String klient_name,String phone_number,
                   String date_return,String place_return, String date_issue,
-                  String place_issue) {
+                  String place_issue,String coment) {
         this.id = id;
         this.id_auto = id_auto;
         this.id_klient = id_klient;
@@ -44,6 +45,14 @@ public class Appeal {
         this.count_day = count_day;
         this.price_day = price_day;
         this.all_price = all_price;
+    }
+
+    public String getComent() {
+        return coment;
+    }
+
+    public void setComent(String coment) {
+        this.coment = coment;
     }
 
     public int getId() {

@@ -52,8 +52,7 @@ public class Auto {
     @NotEmpty(message = "Вводимое поле пустое")
     private String photo_auto; // фото авто
 
-    @Min(value = 0, message = "Age should be greater than 0")
-    private int availability; // возможность проката ( 1 || 0 )
+    private boolean  availability; // возможность проката ( 1 || 0 )
 
     private int price1;
     private int price2;
@@ -67,7 +66,7 @@ public class Auto {
     public Auto(int id, String marka, String model, int tip, String age,
                 int price_rental, String fuel_tupe, int count_passenger,
                 String engine_volume, String tip_transmission,double percent,
-                String tip_unit, String photo_auto, int availability, int price1,
+                String tip_unit, String photo_auto, boolean availability, int price1,
                 int price2, int price3, int price4, int price5) {
         this.id = id;
         this.marka = marka;
@@ -234,11 +233,11 @@ public class Auto {
         this.photo_auto = photo_auto;
     }
 
-    public int getAvailability() {
+    public boolean getAvailability() {
         return availability;
     }
 
-    public void setAvailability(int availability) {
+    public void setAvailability(boolean availability) {
         this.availability = availability;
     }
 

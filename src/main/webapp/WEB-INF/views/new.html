@@ -9,10 +9,7 @@
 </head>
 <body>
 
-<header>
-    <a href="index.html"><img src="image/iconsLogo.png"></a>
-    <a href="inputCabinet.html"> <img src="image/iconsPeopleAdmin.png"></a>
-</header>
+
 
 <div  class="container">
     <form id ="formInr"  th:method="POST" th:action="@{/autoAdmin}" th:object="${auto}">
@@ -143,10 +140,9 @@
         </div>
         <div class="row">
             <div class="col-25">
-                <label for="availability">Enter availability: </label>
             </div>
             <div class="col-75">
-                <input type="text" th:field="*{availability}" id="availability"/>
+                <input type="hidden" th:field="*{availability}" id="availability"/>
                 <div style="color:#FFD600" th:if="${#fields.hasErrors('availability')}" th:errors="*{availability}">availability Error</div>
             </div>
         </div>

@@ -23,6 +23,8 @@ public class AdminController {
     public String index(Model model){
         model.addAttribute("listTip", adminDao.index_tip());
         model.addAttribute("carList",adminDao.showAutoLimit());
+        boolean myBooleanVariable = true;
+        model.addAttribute("myBooleanVariable", myBooleanVariable);
         return "admin";
     }
     @GetMapping("del/{id}")
@@ -31,17 +33,10 @@ public class AdminController {
         return "redirect:/autoAdmin";
 
     }
-    @PostMapping("/editCustomer" )
-    public String editCustomer(@RequestParam(value = "checkboxName", required = false) String checkboxValue)
+    @PostMapping("/editAvailability/{id}" )
+    public String editCustomer(@PathVariable("id") int id, @RequestParam(value = "myBooleanVariable", required = false) boolean b)
     {
-        if(checkboxValue != null)
-        {
-            System.out.println("checkbox is checked");
-        }
-        else
-        {
-            System.out.println("checkbox is not checked");
-        }
+    adminDao.updateAutoAvailability(id,b);
         return "redirect:/autoAdmin";
     }
     @GetMapping("/{id}")

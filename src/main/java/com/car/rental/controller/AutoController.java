@@ -42,12 +42,12 @@ public class AutoController {
     public  String index(Model model,
                          @RequestParam("date_return") String date_return,
                          @RequestParam("date_issue") String date_issue){
-        this.date1 = date_return;
-        this.date2 = date_issue;
+        this.date1 = date_issue;
+        this.date2 = date_return;
         diffInDays();
         model.addAttribute("autoAll",autoDAO.index(date_return,date_issue));
-        model.addAttribute("dateOne",date_return);
-        model.addAttribute("dateTwo",date_issue);
+        model.addAttribute("dateOne",date_issue);
+        model.addAttribute("dateTwo",date_return);
         model.addAttribute("countdate",countDays);
         model.addAttribute("tip_autoAll",autoDAO.index_tip());
         return "autoCards";

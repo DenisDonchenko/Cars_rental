@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Прокат авто</title>
 
   <link rel="stylesheet" th:href="@{resources/css/dataPicker.css}"  type="text/css"/>
   <link rel="stylesheet" th:href="@{resources/css/indexx.css}">
@@ -22,14 +22,14 @@
         <div style="margin-bottom: 30px;">Подача авто</div>
         <div>
           <!-- <input style="margin-bottom: 20px;"type="text" class="inputDate" id="dateOut" placeholder="">-->
-          <input name="date_return" style="margin-bottom: 20px;"type="text" th:id="dateOut" placeholder="">
+          <input name="date_issue" style="margin-bottom: 20px;"type="text" th:id="dateOut" placeholder="">
         </div>
       </div>
       <div>
         <div style="margin-bottom: 30px;">Повернення авто</div>
         <div>
           <!--<input style="margin-bottom: 20px;" type="text" class="inputDate"  id="dateIn" placeholder="">-->
-          <input name="date_issue" style="margin-bottom: 20px;" type="text" th:id="dateIn"  placeholder="">
+          <input name="date_return" style="margin-bottom: 20px;" type="text" th:id="dateIn"  placeholder="">
         </div>
       </div>
     </div>

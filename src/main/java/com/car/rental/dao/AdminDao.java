@@ -68,6 +68,9 @@ public class AdminDao {
                 ,auto.getTip_transmission(),auto.getPercent(),auto.getTip_unit(),auto.getAvailability()
                 ,auto.getPrice1(),auto.getPrice2(),auto.getPrice3(),auto.getPrice4(),auto.getPrice5(), id);
     }
+    public void updateAutoAvailability(int id, boolean b) {
+        jdbcTemplate.update("UPDATE `auto` SET `availability`=? WHERE id = ?", b, id);
+    }
 
 
 

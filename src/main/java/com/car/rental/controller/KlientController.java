@@ -6,10 +6,7 @@ import com.car.rental.model.Klient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -37,6 +34,19 @@ public class KlientController {
     @GetMapping
     public String index(){
         return"rentalForma";
+    }
+
+    @GetMapping("/klentsAdmin")
+    public String klientsAdmin(Model model){
+        model.addAttribute("klientsList",klientDAO.allKlient());
+        return"klientList";
+    }
+    @GetMapping("/{id}")
+    public String show(Model model,
+                       @PathVariable("id") int id){
+        model.addAttribute("klientInfo",klientDAO.showKlientId(id));
+        model.addAttribute("appealAll",klientDAO.showAppealIdKlient(id));
+        return "klient";
     }
     @RequestMapping()
     public  String index(Model model,
@@ -74,13 +84,13 @@ public class KlientController {
             klientDAO.save(klient);
         }
 
-        id_klient = klientDAO.showKlientId(phone_number).getId();
+        id_klient = klientDAO.showKlientPhone(phone_number).getId();
 
 
-        Appeal appeal = new Appeal(id_Auto,id_klient,localDate1.toString(),
-                place_return,localDate2.toString(),place_issue,count_day, priceDay,count_day*priceDay);
+        Appeal appeal = new Appeal(id_Auto,id_klient,localDate2.toString(),
+                place_return,localDate1.toString(),place_issue,count_day, priceDay,count_day*priceDay);
         klientDAO.saveAppel(appeal);
-        return "exitForm";
+        return "redirect:/";
     }
 
     private int showPrices(int countDays,int id){

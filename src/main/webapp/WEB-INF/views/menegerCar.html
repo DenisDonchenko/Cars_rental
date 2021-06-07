@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta>
-    <title>Document</title>
+    <title>Замовлення</title>
     <link rel="stylesheet" type="text/css" href="/resources/css/menegerAppeal.css">
 </head>
 <body>
 <header>
-    <a href="index.html"><img th:src="@{/resources/image/iconsLogo.png}"></a>
+    <a href="/"><img th:src="@{/resources/image/iconsLogo.png}"></a>
     <a href="/autoAdmin">Автомобілі</a>
     <a href="/appeal" style="color: #FFD600;;">Замовлення</a>
-    <a href="">ДТП</a>
-    <a href="">Архів</a>
-    <a href="">Клієнти</a>
-    <a href="inputCabinet.html"> <img th:src="@{/resources/image/iconsPeopleAdmin.png}"></a>
+
+    <a href="/appeal/arhiw">Архів</a>
+    <a href="/klient/klentsAdmin">Клієнти</a>
+    <a href="/logout"> <img th:src="@{/resources/image/iconsPeopleAdmin.png}"></a>
 </header>
 
 <div class="autoApp"  th:each="appeal : ${appealList}">
@@ -25,13 +25,10 @@
             <div class="telephon" th:text="${'Номер тел. -'+appeal.getPhone_number()}">Номер тел. - +380975623568</div>
         </div>
         <div class="infoSec">
-            <div class="buttonsOne">
-                <div class="butDTP">ДТП</div>
-            </div>
             <div class="buttonsTwo">
-                <div class="butEdit" style="background: #74B467;">Закрити бронь</div>
-                <div class="butEdit" style="background: #FFD600;">ДТП</div>
-                <div class="butEdit" style="  background: #D10303;">Скасувати бронь</div>
+                <a th:href="@{/appeal/{id}(id=${appeal.getId()})}" class="butEdit" style="background: #74B467;">Закрити бронь</a>
+
+                <a th:href="@{/appeal/del/{id}(id=${appeal.getId()})}" class="butEdit" style="  background: #D10303;">Скасувати бронь</a>
             </div>
         </div>
     </div>
@@ -39,13 +36,13 @@
 
         <div class="secs1">
             <div style="font-size: 30px;" >Отримання</div>
-            <div style="font-size: 30px; color:#B0B0B0;" th:text="${appeal.getPlace_return()}">Драматичний театр</div>
-            <div style="font-size: 30px;" th:text="${appeal.getDate_return()}"> 23 березня</div>
+            <div style="font-size: 30px; color:#B0B0B0;" th:text="${appeal.getPlace_issue()}">Драматичний театр</div>
+            <div style="font-size: 30px;" th:text="${appeal.getDate_issue()}"> 23 березня</div>
         </div>
         <div class="secs1">
             <div style="font-size: 30px;">Повернення</div>
-            <div style="font-size: 30px; color:#B0B0B0;" th:text="${appeal.getPlace_issue()}">Залізничний вокзал</div>
-            <div style="font-size: 30px;" th:text="${appeal.getDate_issue()}"> 31 березня</div>
+            <div style="font-size: 30px; color:#B0B0B0;" th:text="${appeal.getPlace_return()}">Залізничний вокзал</div>
+            <div style="font-size: 30px;" th:text="${appeal.getDate_return()}"> 31 березня</div>
         </div>
         <div class="secs2">
             <div style="font-size: 30px; color: white; border: 1px solid white; width: 300px;text-align: center;"th:text="${appeal.getPrice_day() + ' грв / день'}">650 грв / день</div>
