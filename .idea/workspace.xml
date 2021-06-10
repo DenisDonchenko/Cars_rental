@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Cars_rental:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb4fb101-e073-4d1e-9aaa-1ae401055503" name="Default Changelist" comment="AllClases">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cars_rental.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dao/TipAutoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rentalForm/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/config/MySpringMvcDispatcherSerlvetIntitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/config/SpringConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/config/SpringSecurityInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/controller/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/controller/AppealController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/controller/AutoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/controller/KlientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/controller/MenegerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/dao/AdminDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/dao/AppealDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/dao/AutoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/dao/KlientDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/model/Appeal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/model/Auto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/model/Klient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/com/car/rental/model/Tip_auto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/addCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/adminCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/autoList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/dataPicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/fonts/CormorantUnicase-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/fonts/CormorantUnicase-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/fonts/CormorantUnicase-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/fonts/CormorantUnicase-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/fonts/CormorantUnicase-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/formaClient.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/image/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/image/indexPhoto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/indexx.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/klientStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/klientStyleAll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/menegerAppeal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/timepicker/bootstrap-clockpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/timepicker/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/timepicker/image/timeIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/css/timepicker/timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/Group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/Group1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/Vector-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/Vector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Accent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Audi_A3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Audi_A5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/BMW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/BMW_118i.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Fiat500E.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Ford Mondeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Ford Mustang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Infiniti Q50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Infiniti QX30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Infiniti QX50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Kia Sportage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Lexus ES.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Mitsubishi Pajero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Nissan Juke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Nissan Qashqai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Nissan X-Trail New.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Peugeot_301.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Renault ZOE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Seat_Ibiza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Seat_Ibiza_Wagon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Toyota_Camry-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Volkswagen Passat B8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/Volkswagen_Polo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/mikro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/notFoto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/skoda_fabia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/auto_photo/spark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/iconsLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/iconsPeople.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/iconsPeopleAdmin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/timeIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/image/whh_canister.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/js/jquery.maskedinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/js/timepicker/bootstrap-clockpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/js/timepicker/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/classes/static/js/timepicker/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/hibernate-validator-6.1.6.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/mysql-connector-java-8.0.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-aop-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-beans-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-context-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-core-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-expression-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-jcl-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-jdbc-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-security-config-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-security-core-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-security-web-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-tx-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-web-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/spring-webmvc-5.2.1.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/thymeleaf-spring5-3.0.11.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/addCar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/arhiw.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/autoCards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/klient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/klientList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/menegerCar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Cars_rental/WEB-INF/views/rentalForma.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/config/MySpringMvcDispatcherSerlvetIntitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/config/SpringConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/config/SpringSecurityInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/controller/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/controller/AppealController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/controller/AutoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/controller/KlientController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/controller/MenegerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/dao/AdminDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/dao/AppealDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/dao/AutoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/dao/KlientDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/model/Appeal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/model/Auto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/model/Klient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/car/rental/model/Tip_auto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/addCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/adminCar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/autoList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/dataPicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/fonts/CormorantUnicase-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/fonts/CormorantUnicase-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/fonts/CormorantUnicase-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/fonts/CormorantUnicase-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/fonts/CormorantUnicase-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/formaClient.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/image/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/image/indexPhoto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/indexx.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/klientStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/klientStyleAll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/menegerAppeal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/timepicker/bootstrap-clockpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/timepicker/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/timepicker/image/timeIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/css/timepicker/timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/Group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/Group1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/Vector-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/Vector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Accent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Audi_A3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Audi_A5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/BMW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/BMW_118i.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Fiat500E.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Ford Mondeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Ford Mustang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Infiniti Q50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Infiniti QX30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Infiniti QX50.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Kia Sportage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Lexus ES.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Mitsubishi Pajero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Nissan Juke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Nissan Qashqai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Nissan X-Trail New.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Peugeot_301.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Renault ZOE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Seat_Ibiza.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Seat_Ibiza_Wagon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Toyota_Camry-removebg-preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Volkswagen Passat B8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/Volkswagen_Polo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/mikro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/notFoto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/skoda_fabia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/auto_photo/spark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/iconsDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/iconsLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/iconsPeople.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/iconsPeopleAdmin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/timeIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/image/whh_canister.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.maskedinput.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/timepicker/bootstrap-clockpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/timepicker/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/js/timepicker/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/controller/AutoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/controller/AutoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/controller/KlientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/controller/KlientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dao/AdminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/car/rental/dao/AutoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/car/rental/dao/AutoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autoCards.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autoCards.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1rhpbEYtaH1s1y2uf7F9jDqaouA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/auto" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views\auto" />
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views\rentalForm" />
+      <recent name="C:\Users\user\Desktop\Cars_rental\src\main\resources\static\js" />
+      <recent name="C:\Users\user\Desktop\Cars_rental\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\user\Desktop\Cars_rental\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views" />
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views\admin\rentalAll" />
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views\admin\car" />
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views\admin\klient" />
+      <recent name="C:\Users\user\IdeaProjects\Cars_rental\src\main\webapp\WEB-INF\views\admin" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Cars_rental:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="27aabfb1-e8a3-4491-a93a-407777e6338d" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52559" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Cars_rental:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb4fb101-e073-4d1e-9aaa-1ae401055503" name="Default Changelist" comment="" />
+      <created>1619438263194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619438263194</updated>
+      <workItem from="1619438266292" duration="10918000" />
+      <workItem from="1619509945908" duration="2722000" />
+      <workItem from="1619515170587" duration="880000" />
+      <workItem from="1619518979405" duration="2832000" />
+      <workItem from="1619528961856" duration="5976000" />
+      <workItem from="1619538520535" duration="8716000" />
+      <workItem from="1619596092322" duration="14125000" />
+      <workItem from="1619675245480" duration="11636000" />
+      <workItem from="1619702177569" duration="1092000" />
+      <workItem from="1619706210528" duration="3306000" />
+      <workItem from="1619763287479" duration="6006000" />
+      <workItem from="1619791983260" duration="592000" />
+      <workItem from="1619798831889" duration="2545000" />
+      <workItem from="1620648223406" duration="24300000" />
+      <workItem from="1620713645841" duration="13976000" />
+      <workItem from="1620810899940" duration="23262000" />
+      <workItem from="1620893674362" duration="6743000" />
+      <workItem from="1620923171246" duration="97000" />
+      <workItem from="1621197812404" duration="441000" />
+      <workItem from="1621264946124" duration="672000" />
+      <workItem from="1621282730644" duration="630000" />
+      <workItem from="1621339986167" duration="556000" />
+      <workItem from="1621497390712" duration="2109000" />
+      <workItem from="1621502276467" duration="209000" />
+      <workItem from="1621945618725" duration="3759000" />
+      <workItem from="1621969988971" duration="1245000" />
+      <workItem from="1622066317718" duration="625000" />
+      <workItem from="1622981189978" duration="2014000" />
+      <workItem from="1623008253754" duration="1423000" />
+      <workItem from="1623072303101" duration="1971000" />
+      <workItem from="1623086950019" duration="2020000" />
+      <workItem from="1623147995938" duration="3525000" />
+      <workItem from="1623312554796" duration="2339000" />
+      <workItem from="1623315185370" duration="3660000" />
+      <workItem from="1623334843133" duration="812000" />
+    </task>
+    <task id="LOCAL-00001" summary="AllClases">
+      <created>1623087716788</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623087716789</updated>
+    </task>
+    <task id="LOCAL-00002" summary="AllClases">
+      <created>1623150346647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623150346647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="AllClases" />
+    <option name="LAST_COMMIT_MESSAGE" value="AllClases" />
+  </component>
+</project>

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Cormorant_Unicase; /* Гарнитура шрифта */
+    src: url(fonts/CormorantUnicase-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cormorant_Unicase;
+}
+body {
+    background: linear-gradient(180deg, #43535E 0%, #61615F 100%) fixed;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+}
+header > a > img{
+    margin: 10px 60px;
+}
+header > a {
+
+    color: white;
+    font-size: 2.1em;
+    text-decoration:none;
+}
+header >img{
+    margin: 10px 60px;
+}
+.klientInfo{
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+.autoApp{
+    width: 70%;
+    border: 1px solid white;
+    margin:auto;
+}
+.infoFirst{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items:center;
+}
+.sect1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items:flex-start;
+}
+.sect1{
+    font-size: 30px;
+    color: white;
+}
+.nameAuto{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+.infoSec{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+
+.infoSecond{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+
+}
+.secs1{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color: white;
+    border: 1px solid white;
+}
+.secs2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color: white;
+}
+.secs2 > div{
+    padding: 5px;
+}
+
+.secs1 > div{
+    padding: 6px;
+
+}

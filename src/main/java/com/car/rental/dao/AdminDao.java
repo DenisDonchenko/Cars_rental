@@ -17,6 +17,7 @@ public class AdminDao {
     public AdminDao (JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
     }
+
     public List<Tip_auto> index_tip(){
         return  jdbcTemplate.query("select * from tip_auto ;",
                 new BeanPropertyRowMapper<>(Tip_auto.class));

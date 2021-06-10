@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Прокат авто</title>
+
+  <link rel="stylesheet" th:href="@{resources/css/dataPicker.css}"  type="text/css"/>
+  <link rel="stylesheet" th:href="@{resources/css/indexx.css}">
+</head>
+
+<body>
+<header>
+  <img th:src="@{/resources/image/iconsLogo.png}" alt="">
+  <a href="/login"> <img th:src="@{/resources/image/iconsPeople.png}"></a>
+</header>
+
+<div class="formIndex">
+  <div class="podpis">Підібрати автомобіль</div>
+  <form th:method="POST"  th:action="@{/auto}" >
+    <div class="listDateInp">
+      <div>
+        <div style="margin-bottom: 30px;">Подача авто</div>
+        <div>
+          <!-- <input style="margin-bottom: 20px;"type="text" class="inputDate" id="dateOut" placeholder="">-->
+          <input name="date_issue" style="margin-bottom: 20px;"type="text" th:id="dateOut" placeholder="">
+        </div>
+      </div>
+      <div>
+        <div style="margin-bottom: 30px;">Повернення авто</div>
+        <div>
+          <!--<input style="margin-bottom: 20px;" type="text" class="inputDate"  id="dateIn" placeholder="">-->
+          <input name="date_return" style="margin-bottom: 20px;" type="text" th:id="dateIn"  placeholder="">
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 50px; ">
+      <input type="submit" class="buttonGo" value="Пошук">
+    </div>
+  </form>
+</div>
+
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/jquery-ui.min.js"></script>
+<script>
+
+  $.datepicker.regional['ru'] = {
+    closeText: 'Закрити',
+    prevText: 'Попередній',
+    nextText: 'Наступний',
+    currentText: 'Сьогодні',
+    monthNames: ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
+    monthNamesShort: ['Січ','Лют','Бер','Квіт','Трав','Черв','Лип','Сер','Вер','Жов','Лис','Груд'],
+    dayNames: ['неділя','понеділок','вівторок','середа','четвер','п ятниця','субота'],
+    dayNamesShort: ['нед','пнд','втр','срд','чтв','птн','сбт'],
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+    weekHeader: 'Не',
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    setDefaults: new Date(),
+    isRTL: false,
+    maxDate: "+2m +1w",
+    minDate: new Date(),
+    showAnim: "fadeIn",
+    showMonthAfterYear: false,
+    showOtherMonths: true,
+    yearSuffix: ''
+  };
+
+  $.datepicker.setDefaults($.datepicker.regional['ru']);
+
+  $(function(){
+    $("#dateOut").datepicker({
+      showOn: "button",
+      buttonImage: "/resources/image/iconsDate.png",
+      buttonImageOnly: false,
+      buttonText: "Обрати дату",
+      showOtherMonths: true
+    });
+  });
+
+
+  $(function(){
+    $("#dateIn").datepicker({
+      showOn: "button",
+      buttonImage: "/resources/image/iconsDate.png",
+      buttonImageOnly: false,
+      buttonText: "Обрати дату",
+      showOtherMonths: true
+    });
+  });
+</script>
+
+</body>
+</html>

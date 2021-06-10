@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Авто</title>
+    <link rel="stylesheet" type="text/css" href="/resources/css/adminCar.css">
+<style>
+    /* The container */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 40px;
+        background-color: none;
+        border: 1px solid white;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+        background-color: none;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+        background-color: none;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 5px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color:#FFD600;
+        border: none;
+        border-width: 3px 3px 3px 3px;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+</style>
+</head>
+<body>
+<header>
+    <a><img th:src="@{/resources/image/iconsLogo.png}" alt=""></a>
+    <a href="/autoAdmin" style="color: #FFD600;;">Автомобілі</a>
+    <a href="/appeal">Замовлення</a>
+    <a href="/appeal/arhiw">Архів</a>
+    <a href="/klient/klentsAdmin">Клієнти</a>
+    <a href="/logout"> <img th:src="@{/resources/image/iconsPeopleAdmin.png}"></a>
+</header>
+        <div class="tips">
+            <a class="active" th:href="@{/autoAdmin}" >Усі</a>
+
+            <a th:each="tip_auto : ${listTip}" th:href="@{/autoAdmin/{id}(id=${tip_auto.getId()})}"
+               th:text="${tip_auto.getName()}"> Hello </a>
+        </div>
+<a  th:href="@{/autoAdmin/newForm}"><div class="addCarButton">Додати авто</div></a>
+
+<div class="carCarda" th:each="auto : ${carList}">
+
+
+    <div class="card">
+        <form  th:action="@{autoAdmin/editAvailability/{id}(id=${auto.getId()})}" th:method="POST">
+
+            <label class="container">
+                <input  type="checkbox" onchange="this.form.submit()" name="myBooleanVariable" th:checked="${auto.availability}">
+                <span class="checkmark"></span>
+            </label>
+
+        </form>
+        <div class="fotoCar" style="width:20%;"> <img style=" width:20em ;height:15em
+    "th:src="${auto.getPhoto_auto()}" alt=""></div>
+
+        <div class="section2">
+
+            <div class="nameAuto" th:text="${auto.getMarka() + ' ' + auto.getModel()}">Seat Ibiza Wagon</div>
+
+            <a  th:href="@{/autoAdmin/edit/{id}(id=${auto.getId()})}"><div class="buttonSearch">Редагувати</div></a>
+            <a  th:href="@{/autoAdmin/del/{id}(id=${auto.getId()})}"><div class="deleteCar">Видалити</div></a>
+            <table>
+                <tr>
+                    <td class="tab1">об'єм<br>двигуна</td>
+                    <td class="tab2" th:text="${auto.getEngine_volume()}"></td>
+                    <td class="tab1">тип<br>палива</td>
+                    <td class="tab2" th:text="${auto.getFuel_tupe()}"></td>
+                    <td class="tab1">тип<br>приводу</td>
+                    <td class="tab2" th:text="${auto.getTip_unit()}">передній</td>
+                </tr>
+                <tr>
+                    <td class="tab1">кількість<br>пасіжирів</td>
+                    <td class="tab2" th:text="${auto.getCount_passenger()}">6</td>
+                    <td class="tab1">тип коробки<br>передач</td>
+                    <td class="tab2" th:text="${auto.getTip_transmission()}">автомат</td>
+                    <td class="tab1">рік<br>випуску</td>
+                    <td class="tab2" th:text="${auto.getAge()}">2019</td>
+                </tr>
+            </table>
+            <table class="customers">
+
+                <tr >
+                    <td class="inputNumber" style=" padding-right:20px;text-align: left; font-size: 1.5vw; " >Кільк. днів</td>
+                    <td class="inputNumber">1-2</td>
+                    <td class="inputNumber">3-5</td>
+                    <td class="inputNumber">6-7</td>
+                    <td class="inputNumber">8-14</td>
+                    <td class="inputNumber">15-28</td>
+                    <td class="inputNumber">29+</td>
+                </tr>
+                <tr >
+                    <td class="inputNumber"style=" padding-right:50px; text-align: left;font-size: 1.5vw;  ">Ціна, грв(за добу)</td>
+                    <td class="inputNumber" th:text="${auto.getPrice_rental()}">973</td>
+                    <td class="inputNumber" th:text="${auto.getPrice1()}">873</td>
+                    <td class="inputNumber" th:text="${auto.getPrice2()}">600</td>
+                    <td class="inputNumber" th:text="${auto.getPrice3()}">500</td>
+                    <td class="inputNumber" th:text="${auto.getPrice4()}">400</td>
+                    <td class="inputNumber" th:text="${auto.getPrice5()}">300</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

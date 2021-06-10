@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cormorant_Unicase;
+}
+body {
+    background: linear-gradient(180deg, #43535E 0%, #61615F 100%) fixed;
+}
+form{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+    text-align: center;
+    width: 100%;
+    font-size: 2.1vw;
+    margin: auto;
+    color: white;
+}
+.inputButton{
+    padding: 10px 100px;
+    background: #FFD600;
+    color: black;
+    border: none;
+    font-size: 2.1vw;
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+    text-align: center;
+}
+input{
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
+input:active {
+    border: 1px solid white;
+}
+form > div > label{
+    font-size: 1.5vw;
+    margin-left: 30px;
+}
+.form-input {
+    margin: 10px;
+    width: 700px;
+    border: 1px solid white;
+    height: 40px;
+    background: none;
+}
+.sections{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    text-align: center;
+    border: 1px solid white;
+    width: 60%;
+    margin: auto;
+
+
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 30px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: self-end;
+    text-align: center;
+}
+.nameCar{
+    font-size: 3vw;
+    color: white;
+
+}
+.price{
+    border: 1px solid white;
+    font-size: 2vw;
+    color: #FFD600;
+    padding: 10px 20px;
+}
+.tipCar{
+    font-size: 2.5vw;
+    color: #B0B0B0;
+}
+header{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.7vw;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

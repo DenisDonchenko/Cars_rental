@@ -33,13 +33,13 @@ public class KlientController {
     }
     @GetMapping
     public String index(){
-        return"rentalForma";
+        return "rentalForma";
     }
 
     @GetMapping("/klentsAdmin")
     public String klientsAdmin(Model model){
         model.addAttribute("klientsList",klientDAO.allKlient());
-        return"klientList";
+        return "klientList";
     }
     @GetMapping("/{id}")
     public String show(Model model,

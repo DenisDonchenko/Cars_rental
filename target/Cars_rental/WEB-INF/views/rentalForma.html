@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформлення</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Cormorant_Unicase;
+        }
+        body {
+            background: linear-gradient(180deg, #43535E 0%, #61615F 100%) fixed;
+        }
+        form{
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            align-items:center;
+            text-align: center;
+            width: 100%;
+            font-size: 2.1vw;
+            margin: auto;
+            color: white;
+        }
+        .inputButton{
+            padding: 10px 100px;
+            background: #FFD600;
+            color: black;
+            border: none;
+            font-size: 2.1vw;
+        }
+        form > div{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items:flex-start;
+            text-align: center;
+        }
+        input{
+            font-size: 1.5vw;
+            color: white;
+            text-align: center;
+        }
+        input:active {
+            border: 1px solid white;
+        }
+        form > div > label{
+            font-size: 1.5vw;
+            margin-left: 30px;
+        }
+        .form-input {
+            margin: 10px;
+            width: 700px;
+            border: 1px solid white;
+            height: 40px;
+            background: none;
+        }
+        .sections{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items:center;
+            text-align: center;
+            border: 1px solid white;
+            width: 60%;
+            margin: auto;
+
+
+        }
+        .section2{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            margin-left: 30px;
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: self-end;
+            text-align: center;
+        }
+        .nameCar{
+            font-size: 3vw;
+            color: white;
+
+        }
+        .price{
+            border: 1px solid white;
+            font-size: 2vw;
+            color: #FFD600;
+            padding: 10px 20px;
+        }
+        .tipCar{
+            font-size: 2.5vw;
+            color: #B0B0B0;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 2.7vw;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .priceBlock{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: self-end;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>Заповніть форму реєстрації</header>
+<div class="sections">
+    <div class="section1">
+        <div class="fotoCar"> <img style=" width:20em ;height:15em " th:src="${autoOne.getPhoto_auto()}" alt=""></div>
+    </div>
+    <div class="section2">
+        <div class="name">
+            <div class="nameCar" th:text="${autoOne.getMarka() + ', ' + autoOne.getModel()}">Chevrolet Spark</div>
+            <div class="tipCar"></div>
+        </div>
+        <div class="priceBlock">
+            <div class="price"th:text="${autoPrice+' грв / день'}">650 грв / день</div>
+            <div class="price"th:text="${'Загалом '+autoAllprice+' грв'}">650 грв / день</div>
+        </div>
+    </div>
+
+</div>
+<form th:method="POST" th:action="@{/klient/new}" >
+    <div>
+        <label>Ім'я</label>
+        <input maxlength="50" tipe="text" name="first_name"  id="first_name" class="form-input" placeholder="ім я" >
+    </div>
+    <div >
+        <label>Прізвище</label>
+        <input maxlength="50" tipe="text" name="last_name" class="form-input" id="last_name" placeholder="прізвище" >
+    </div>
+    <div >
+        <label>По батькові</label>
+        <input maxlength="50" name="patronymic"   class="form-input"placeholder="по батькові"  tipe="text">
+    </div>
+    <div >
+        <label>Номер телефону</label>
+        <input name="phone_number" id="phone1" class="form-input"placeholder="номер телефону"  tipe="text">
+    </div>
+    <div >
+        <label>Місце отримання</label>
+        <input name="issue" class="form-input"placeholder="Місце отримання"  tipe="text">
+    </div>
+    <div>
+        <label>Місце повернення</label>
+        <input name="return" class="form-input"placeholder="Місце повернення"  tipe="text">
+    </div>
+    <input class="inputButton" type="submit" value="Далі">
+</form>
+
+<script th:src="@{/resources/js/jquery.maskedinput.min.js}"></script>
+<script>
+    //1 пример
+    $(function(){
+        $("#phone1").mask("+38(099) 999-99-99");
+    });
+    $('body').on('input', '#first_name', function(){
+        this.value = this.value.replace(/[^a-zа-яёs]/gi, '');
+    });last_name
+    $('body').on('input', '#last_name', function(){
+        this.value = this.value.replace(/[^a-zа-яёs]/gi, '');
+    });
+</script>
+</body>
+</html>

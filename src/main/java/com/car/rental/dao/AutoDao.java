@@ -20,12 +20,6 @@ public class AutoDao {
         this.jdbcTemplate = jdbcTemplate;
 
     }
-
-
-    public List<Tip_auto> index_tip(){
-        return  jdbcTemplate.query("select * from tip_auto ;",
-                new BeanPropertyRowMapper<>(Tip_auto.class));
-    }
     public Auto show(int id){
         return  jdbcTemplate.query("select * from auto where id =? and auto.availability = 1",
                 new Object[]{id},

@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Cormorant_Unicase; /* Гарнитура шрифта */
+    src: url(fonts/CormorantUnicase-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Cormorant_Unicase;
+}
+body {
+    background: linear-gradient(180deg, #43535E 0%, #61615F 100%) fixed;
+}
+
+.inputButton{
+    padding: 10px 100px;
+    background: #FFD600;
+    color: black;
+    border: none;
+    font-size: 2.1vw;
+}
+
+.form-input {
+    margin: 10px;
+    width: 700px;
+    border: 1px solid white;
+    height: 40px;
+    background: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items:center;
+}
+header > a > img{
+    margin: 10px 60px;
+}
+header > a {
+
+    color: white;
+    font-size: 2.1em;
+    text-decoration:none;
+}
+header >img{
+    margin: 10px 60px;
+}
+/*------------------------------------------------------*/
+
+input[type=text],input[type=file], select, textarea {
+    font-family: Cormorant_Unicase;
+    width: 60%;
+    padding: 10px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0px;
+    resize: vertical;
+}
+select{
+    font-family: Cormorant_Unicase;
+    width: 63%;
+    padding: 10px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+option{
+    color:white;
+    background: #43535E ;
+    border: 1px solid white;
+}
+input[type=submit] {
+    padding: 10px 60px;
+    background: #FFD600;
+    color: black;
+    border: none;
+    font-size: 1.3vw;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.container {
+    border-radius: 0px;
+    background-color: none;
+    padding: 20px;
+    width: 60%;
+    margin-bottom:20px;
+    margin: auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    color: white;
+    font-size: 1.2vw;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row{
+    margin: 5px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.sectionPrice{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    padding: 10px;
+    margin-top:10px;
+    border: 1px solid white;
+}
+.nameSect{
+    margin: auto;
+    color: white;
+    font-size: 1.7vw;
+
+}
+.sectForm{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
